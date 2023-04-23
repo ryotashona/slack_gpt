@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  slack_bot:
+    container_name: slack_bot
+    build:
+      context: ./slack_bot
+      dockerfile: Dockerfile
+    env_file:
+      - ./slack_bot/.env
+    volumes:
+      - ./slack_bot/src:/app
