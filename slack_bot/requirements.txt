@@ -1,3 +1,5 @@
 slack-sdk
 slack-bolt
 aiohttp
+
+openai
